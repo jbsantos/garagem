@@ -1,0 +1,74 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "viatura": "Caminhão Cesto Aéreo",
+      "nomeMotorista": "string",
+      "data": "string",
+      "regfab": "string",
+      "missao": "string",
+      "horarioSaida": "string",
+      "horarioChegada": "12:22",
+      "kmSaida": 334,
+      "kmChegada": 354,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "viatura": "Caminhão Cesto Aéreo",
+      "nomeMotorista": "S2 CENYR",
+      "data": "14/11/2021",
+      "regfab": "BC-12334",
+      "missao": "BOA VIAGEM / BARF / COMAR",
+      "horarioSaida": "00:23",
+      "horarioChegada": "23:32",
+      "kmSaida": "342",
+      "kmChegada": 354,
+      "name": "2S Jorge",
+      "price": 5.89
+    },
+    {
+      "id": 3,
+      "viatura": "Caminhão Cesto Aéreo",
+      "nomeMotorista": "string",
+      "data": "string",
+      "regfab": "string",
+      "missao": "string",
+      "horarioSaida": "string",
+      "horarioChegada": "string",
+      "kmSaida": 334,
+      "kmChegada": 354,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "viatura": "FIAT UNNO ",
+      "nomeMotorista": "2S CENRY",
+      "data": "14-02-2021",
+      "regfab": "DC-2001-FAB",
+      "missao": "LEVAR O CORONEL ELIOMAR PARA AMAZÔZINA",
+      "horarioSaida": "12:32",
+      "horarioChegada": "12:43",
+      "kmSaida": "3823",
+      "kmChegada": "3999",
+      "name": "2S ARQUIMEDES",
+      "price": "23434",
+      "id": 4
+    },
+    {
+      "viatura": "teste",
+      "nomeMotorista": "teste",
+      "data": "234234",
+      "regfab": "jlkjlkjfsdlkjfk",
+      "missao": "kljlfskjlfksjdlfjsljflj",
+      "horarioSaida": "2332",
+      "horarioChegada": "24234",
+      "kmSaida": "43348",
+      "kmChegada": "873878",
+      "name": "kjalkjdjfjjaoj",
+      "price": "8787",
+      "id": 5
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+<mat-card>
+    <mat-card-title>Alterar Produto</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput placeholder="Viatura"
+                [(ngModel)]="product.viatura" name="viatura">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Nome Motorista"
+                [(ngModel)]="product.nomeMotorista" name="nomeMotorista">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Data"
+                [(ngModel)]="product.data" name="data">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Reg FAB"
+                [(ngModel)]="product.regfab" name="regfab">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Missão"
+                [(ngModel)]="product.missao" name="missao">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Horário Saída"
+                [(ngModel)]="product.horarioSaida" name="horarioSaida">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Horário Chegada"
+                [(ngModel)]="product.horarioChegada" name="horarioChegada">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Km de Saída"
+                [(ngModel)]="product.kmSaida" name="kmSaida">
+        </mat-form-field>
+         <mat-form-field>
+            <input matInput placeholder="Km de Chegada"
+                [(ngModel)]="product.kmChegada" name="kmChegada">
+        </mat-form-field>
+        <mat-form-field>
+        <input matInput placeholder="Nome do Despachante"
+                [(ngModel)]="product.name" name="name">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Preço (R$)"
+                [(ngModel)]="product.price" name="price">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="updateProduct()" color="primary">
+        Atualizar
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
