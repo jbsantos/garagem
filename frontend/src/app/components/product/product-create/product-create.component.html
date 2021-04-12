@@ -1,7 +1,135 @@
+<div class="page-content-wrap">
+    <div class="login-logo"></div>
+
+    <div class="col-md-2"></div>
+    <div class="col-md-8">  
+  
+  <form [formGroup]="formulario" (ngSubmit)="cadastrarMissao()" novalidate class="form-horizontal" id="validate"
+            role="form">
+           
+                        <div class="form-group">
+                            <label class="col-md-2 control-label">Viatura:</label>
+                            <div class="col-md-10">
+                                <select 
+                                    (change)="localizarViatura(formulario.get('viatura').value)"
+                                    formControlName="viatura"
+                                    required class="form-control">
+                                    <option value="" [ngValue]="null">Selecione</option>
+                                    <option *ngFor="let vt of viaturas" [value]="vt.regfab">{{vt.viatura }}</option>
+                                </select>
+                              
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                             <label class="col-md-2 control-label">RegFab:</label>
+                             <div class="col-md-10">
+                                <input 
+                                    formControlName="regfab" 
+                                    type="text" required 
+                                    class="form-control  " 
+                                    value="{{ formulario.get('regfab').setValue(formulario.get('viatura').value)}}"
+                                    name="regfab" />
+                             </div>
+                        </div>
+                         <div class="form-group">
+                            <label for="example-datetime-local-input" class="col-3 col-form-label">Data e hora saída</label>
+                            <div class="col-md-10">
+                              <input 
+                                    class="form-control" 
+                                    type="datetime-local"
+                                    value="2021-04-22T13:45:00" 
+                                    id="horarioSaida"
+                                    formControlName="horarioSaida"/>
+                            </div>
+                         </div>
+                         <div class="form-group">
+                            <label class="col-md-3 control-label">KM de saída:</label>
+                            <div class="col-md-10">
+                                <input 
+                                 formControlName="kmSaida" 
+                                 type="text" required 
+                                 class="form-control"
+                                 name="kmSaida" />
+                            </div>
+                        </div>
+                         <div class="form-group">
+                            <label class="col-md-4 control-label">Nome do Motorista:</label>
+                            <div class="col-md-10">
+                                <input 
+                                 formControlName="nomeMotorista" 
+                                 type="text" required 
+                                 class="form-control"
+                                 name="nomeMotorista" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                              <label class="col-md-3 control-label">Dados da Missão</label>
+                              <div class="col-md-10">
+                              <input class="form-control"
+                                class="form-control"
+                                formControlName="missao" 
+                                name="missao" />
+                            </div>
+                        </div>
+
+                          <div class="form-group">
+                            <label class="col-md-4 control-label">Nome do Despachante:</label>
+                            <div class="col-md-10">
+                                <input 
+                                 formControlName="name" 
+                                 type="text" required 
+                                 class="form-control"
+                                 name="name" />
+                            </div>
+                        </div>
+
+                         <div class="form-group">
+                            <label for="example-datetime-local-input" class="col-4 col-form-label">Data e hora chegada</label>
+                            <div class="col-md-10">
+                                <input 
+                                    class="form-control" 
+                                    type="datetime-local"
+                                    value="" 
+                                    id="horarioSaida"
+                                    formControlName="horarioChegada"/>
+                            </div>
+                         </div>   
+
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">KM de Chegada:</label>
+                            <div class="col-md-10">
+                                <input 
+                                 formControlName="kmChegada" 
+                                 type="text" required 
+                                 class="form-control"
+                                 name="kmChegada" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label">Observações:</label>
+                            <div class="col-md-10">
+                                <textarea 
+                                 formControlName="observacoes" 
+                                 type="text" required 
+                                 class="form-control"
+                                 name="observacoes">
+                                 </textarea>
+                            </div>
+                        </div>
+       <button type="submit" class="btn btn-primary pull-right">
+            <span class="fa fa-save"></span>
+            Salvar
+        </button>
+  </form>  
+
+
+  </div>
+
 <mat-card>
     <mat-card-title>Nova Missão</mat-card-title>
     <form>
-        <mat-form-field>
+        <mat-form-field class="form">
             <mat-label>Viaturas</mat-label>
             <mat-select disableRipple>
                 <mat-option   [(ngModel)]="product.viatura" name="viatura" *ngFor="let food of foods" [value]="food.value">
@@ -20,7 +148,7 @@
         </mat-form-field>
          <mat-form-field>
             <input matInput placeholder="Data"
-                [(ngModel)]="product.data" name="data">
+                [(ngModel)]="product.observacoes" name="observacoes">
         </mat-form-field>
          <mat-form-field>
             <input matInput placeholder="Reg FAB"

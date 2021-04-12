@@ -2,7 +2,7 @@ export interface Product {
     id?: number
     viatura?: string
     nomeMotorista?: string
-    data?: string
+    observacoes?: string
     regfab?: string
     missao?: string
     horarioSaida?: string
