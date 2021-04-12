@@ -3,7 +3,6 @@ import { ProductService } from './../product.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {FormControl, FormGroup, Validators } from '@angular/forms'
-import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 import { NodeWithI18n } from '@angular/compiler';
 import { DatePipe } from '@angular/common';
 
@@ -35,7 +34,6 @@ export class ProductCreateComponent implements OnInit {
   ];
 
   regfab: string = ""
-  model: NgbDateStruct;
   data: DatePipe
   
 
