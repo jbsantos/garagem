@@ -6,7 +6,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { HomeComponent } from "./views/home/home.component";
 import { ProductCrudComponent } from "./views/product-crud/product-crud.component";
 import { ProductCreateComponent } from './components/product/product-create/product-create.component';
-
+import { ProductSearchComponent} from './components/product/product-search/product-search.component' 
 
 const routes: Routes = [
   {
@@ -29,10 +29,16 @@ const routes: Routes = [
     path: "products/delete/:id",
     component: ProductDeleteComponent
   },
+
+  {
+    path: "products/search/:id",
+    component: ProductSearchComponent
+  },
+  
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+exports: [RouterModule]
 })
 export class AppRoutingModule {}

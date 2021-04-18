@@ -68,6 +68,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatTreeModule} from '@angular/material/tree';
+import { ProductSearchComponent } from './components/product/product-search/product-search.component';
 
 
 
@@ -90,6 +91,7 @@ registerLocaleData(localePt);
     ForDirective,
     ProductUpdateComponent,
     ProductDeleteComponent,
+    ProductSearchComponent,
     
   ],
   imports: [

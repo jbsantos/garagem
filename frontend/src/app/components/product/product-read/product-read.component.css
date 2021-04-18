@@ -1,6 +1,23 @@
+
+
 table {
     width: 100%;
+ 
+    
 }
+td.g {
+   
+    border-left-width: 0;
+    min-width: 90px;
+    height: 12px;
+  }
+
+  td.gg {
+    
+    border-left-width: 0;
+    min-width: 180px;
+    height: 12px;
+  }
 
 .edit {
     margin-right: 10px;
@@ -11,5 +28,15 @@ table {
 }
 
 .delete > i {
+    margin-right: 10px;
     color: #e35e6b;
 }
+
+  .search   >i {
+    color: #1b5ce9;
+   
+}
+.search{
+   
+}
+

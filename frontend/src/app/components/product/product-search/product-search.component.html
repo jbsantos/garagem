@@ -1,0 +1,55 @@
+<mat-card>
+    <mat-card-title>Visualizar Missão</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input class="gg" matInput placeholder="Ordem de Serviço"
+                [value]="product.id" name="id" disabled>
+        </mat-form-field>
+<br>
+        <mat-form-field>
+            <input class="gg"  matInput placeholder="Viatura"
+                [value]="product.viatura" name="viatura" disabled>
+        </mat-form-field>
+<br>
+        <mat-form-field>
+            <input class="gg"  matInput placeholder="nomeMotorista"
+                [value]="product.nomeMotorista" name="nomeMotorista" disabled>
+        </mat-form-field>
+<br>
+         <mat-form-field>
+            <input class="gg" matInput placeholder="Missão"
+                [value]="product.missao" name="missao" disabled>
+        </mat-form-field>
+<br>
+        <mat-form-field>
+            <input class="gg" matInput placeholder="Hr de Saída"
+                [value]="product.horarioSaida" name="horarioSaida" disabled>
+        </mat-form-field>
+<br>
+        <mat-form-field>        
+                <input class="gg" matInput placeholder="Hr de Chegada"
+                [value]="product.horarioChegada" name="horarioChegada" disabled>
+        </mat-form-field>
+<br>    
+        <mat-form-field>
+            <input class="gg" matInput placeholder="Km de Saida"
+                [value]="product.kmSaida" name="product.kmSaida" disabled>
+        </mat-form-field>
+<br>    
+        <mat-form-field>
+            <input class="gg" matInput placeholder="Despachante"
+                [value]="product.name" name="name" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input class="gg" matInput placeholder="Observacões"
+                [value]="product.observacoes" name="observacoes" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="imprimirMissao()" color="primary">
+        Imprimir
+    </button>
+    
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>

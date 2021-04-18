@@ -7,80 +7,76 @@
      
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef>Id</th>
-        <td mat-cell *matCellDef="let row">{{row.id}}</td>
+        <td class="g" mat-cell *matCellDef="let row">{{row.id}}</td>
       </ng-container>
 
        <!-- Viatura Column -->
       <ng-container matColumnDef="viatura">
-        <th mat-header-cell *matHeaderCellDef>Viatura</th>
-        <td mat-cell *matCellDef="let row">{{row.viatura}}</td>
+        <th  mat-header-cell *matHeaderCellDef>Viatura</th>
+        <td class="g" mat-cell *matCellDef="let row">{{row.viatura}}</td>
       </ng-container>
   
        <!-- nomeMotorista Column -->
-      <ng-container matColumnDef="nomeMotorista">
-        <th mat-header-cell *matHeaderCellDef>Nome do Motorista</th>
-        <td mat-cell *matCellDef="let row">{{row.nomeMotorista}}</td>
+      <ng-container  matColumnDef="nomeMotorista">
+        <th mat-header-cell *matHeaderCellDef>Motorista</th>
+        <td class="g" mat-cell *matCellDef="let row">{{row.nomeMotorista}}</td>
       </ng-container>
 
 
         <!-- regfab Column -->
       <ng-container matColumnDef="regfab">
         <th mat-header-cell *matHeaderCellDef>REG FAB</th>
-        <td mat-cell *matCellDef="let row">{{row.regfab}}</td>
+        <td  class="g"mat-cell *matCellDef="let row">{{row.regfab}}</td>
       </ng-container>
         <!-- missao Column -->
       <ng-container matColumnDef="missao">
         <th mat-header-cell *matHeaderCellDef>Missão</th>
-        <td mat-cell *matCellDef="let row">{{row.missao}}</td>
+        <td class="gg" mat-cell *matCellDef="let row">{{row.missao}}</td>
       </ng-container>
   
       <!-- horarioSaida Column -->
       <ng-container matColumnDef="horarioSaida">
-        <th mat-header-cell *matHeaderCellDef>Horário de saída</th>
-        <td mat-cell *matCellDef="let row">{{row.horarioSaida}}</td>
+        <th mat-header-cell *matHeaderCellDef>Hr de saída</th>
+        <td class="g" mat-cell *matCellDef="let row">{{row.horarioSaida}}</td>
       </ng-container>
 
          <!-- horarioChegada Column -->
       <ng-container matColumnDef="horarioChegada">
-        <th mat-header-cell *matHeaderCellDef>Horario de Chegada</th>
-        <td mat-cell *matCellDef="let row">{{row.horarioChegada}}</td>
+        <th mat-header-cell *matHeaderCellDef>Hr Chegada</th>
+        <td class="g" mat-cell *matCellDef="let row">{{row.horarioChegada}}</td>
       </ng-container>
 
-         <!-- kmSaida Column -->
+       <!-- kmSaida Column 
       <ng-container matColumnDef="kmSaida">
         <th mat-header-cell *matHeaderCellDef>Km de saída</th>
         <td mat-cell *matCellDef="let row">{{row.kmSaida}}</td>
-      </ng-container>
+      </ng-container>-->
 
-         <!-- kmChegada Column -->
+         <!-- kmChegada Column 
       <ng-container matColumnDef="kmChegada">
         <th mat-header-cell *matHeaderCellDef>Km de Chegada</th>
         <td mat-cell *matCellDef="let row">{{row.kmChegada}}</td>
-      </ng-container>
+      </ng-container> -->
 
          <!-- kmChegada Column -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef>Nome do Despachante</th>
-        <td mat-cell *matCellDef="let row">{{row.name}}</td>
+        <th mat-header-cell *matHeaderCellDef>Despachante</th>
+        <td class="g" mat-cell *matCellDef="let row">{{row.name}}</td>
       </ng-container>
 
-         <!-- Observações -->
+         <!-- Observações 
       <ng-container matColumnDef="observacoes">
         <th mat-header-cell *matHeaderCellDef>Observações</th>
-        <td mat-cell *matCellDef="let row">{{row.observacoes}}</td>
-      </ng-container>
+        <td class="gg" mat-cell *matCellDef="let row">{{row.observacoes}}</td>
+      </ng-container>-->
 
   
-      <!-- Price Column -->
-      <ng-container matColumnDef="price">
-        <th mat-header-cell *matHeaderCellDef>Preço</th>
-        <td mat-cell *matCellDef="let row">{{ row.price | currency: 'BRL' }}</td>
-      </ng-container>
+
 
       <!-- Action Column -->
       <ng-container matColumnDef="action">
         <th mat-header-cell *matHeaderCellDef>Ações</th>
-        <td mat-cell *matCellDef="let row">
+        <td class="gg"cellep mat-cell *matCellDef="let row">
             <a routerLink="/products/update/{{ row.id }}" class="edit">
                 <i class="material-icons">
                     edit
@@ -89,6 +85,11 @@
             <a routerLink="/products/delete/{{ row.id }}" class="delete">
                 <i class="material-icons">
                     delete
+                </i>
+            </a>
+            <a routerLink="/products/search/{{ row.id }}" class="search">
+              <i class="material-icons">
+                    search
                 </i>
             </a>
         </td>
